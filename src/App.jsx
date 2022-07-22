@@ -1,8 +1,22 @@
+import { Post } from "./Post";
+import { Header } from "./components/Header";
 
-function App() {
+import './style.css'
+
+export function App() {
   return (
-    <h1>Hello World</h1>
+    <div>
+      <Header />
+
+      <Post 
+        author="Vinicius Maclters" 
+        content="Lorem ipslum"
+      />
+
+      <Post
+        author="Matheus Maclters"
+        content="Mais um post top"  
+      />
+    </div>
   )
 }
-
-export default App
